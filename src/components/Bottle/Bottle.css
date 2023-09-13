@@ -1,0 +1,20 @@
+.bottle{
+    background-color: lightgray;
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+}
+img{
+    max-width: 80%;
+    border-radius: 10%;
+}
+.btn{
+    background-color: dimgray;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+.btn:hover{
+    cursor: pointer;
+}

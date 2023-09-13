@@ -1,0 +1,23 @@
+img{
+    width: 100px;
+}
+.item{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.item > div{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.btn-remove{
+    width: max-content;
+    background-color: rgba(255, 0, 0, 0.623);
+    color: white;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.btn-remove:hover {
+    cursor: pointer;
+}
