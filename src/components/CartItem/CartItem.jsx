@@ -6,7 +6,7 @@ const CartItem = ({ bottle, handleRemoveCart, index}) => {
   return (
     <div>
       <div className="item">
-        <img src={img} alt="" />
+        <img className="cart-img" src={img} alt="" />
         <div>
             <h4>{name}</h4>
             <p>Price: {price}</p>

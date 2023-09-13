@@ -6,7 +6,7 @@ const Bottle = ({ bottle,handleAddCart }) => {
 
   return (
     <div className="bottle">
-      <img src={img} alt="" />
+      <img className="img" src={img} alt="" />
       <h3>{name}</h3>
       <h4>Brand: {seller}</h4>
       <p>Price: {price}</p>
