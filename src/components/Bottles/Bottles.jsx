@@ -6,7 +6,6 @@ import Cart from "../Cart/Cart";
 
 const Bottles = () => {
   const [bottles, setBottles] = useState([]);
-  console.log(bottles);
   useEffect(() => {
     fetch("bottles.json")
       .then((res) => res.json())
@@ -28,15 +27,22 @@ const Bottles = () => {
     setCart(localCart);
   }, [bottles]);
 
-  console.log(cart)
 
   const handleAddCart = (bottle) => {
     addToLs(bottle);
-    setCart([...cart,bottle])
+    setCart([...cart, bottle])
   };
+  const handleRemoveCart = (index) => {
+    const newCart = [...cart];
+    newCart.splice(index, 1);
+    setCart(newCart);
+    const lsCart = JSON.parse(localStorage.getItem('cart'));
+    lsCart.splice(index, 1);
+    localStorage.setItem('cart', JSON.stringify(lsCart));
+  }
   return (
     <>
-      <Cart cart={cart}></Cart>
+      <Cart cart={cart} handleRemoveCart={handleRemoveCart}></Cart>
       <div className="bottles-container">
         {bottles.map((bottle) => (
           <Bottle
