@@ -5,13 +5,13 @@
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 640px) {
     .bottles-container{
         grid-template-columns: 1fr;
     }
 }
 
-@media screen and (min-width: 426px) and (max-width: 768px) {
+@media screen and (min-width: 641px) and (max-width: 768px) {
     .bottles-container{
         grid-template-columns: repeat(2,1fr);
     }
