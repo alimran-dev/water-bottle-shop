@@ -1,8 +1,7 @@
-# React + Vite
+# Memorable Water Bottle Shop
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A very simple project using react. Here we can add bottles to the cart and can remove it. Cart will be saved in local storage of the browser.
 
-Currently, two official plugins are available:
+- Code link: [https://github.com/alimran-dev/water-bottle-shop](https://github.com/alimran-dev/water-bottle-shop)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Live Link: [https://bottle-shop-air.surge.sh](https://bottle-shop-air.surge.sh/)
